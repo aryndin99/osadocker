@@ -1,0 +1,2 @@
+# osadocker
+Stream Analytics docker
