@@ -5,6 +5,9 @@ export KAFKA_VERSION=1.0.1
 export SPARK_HADOOP_VERSION=2.7
 export SPARK_VERSION=2.2.1
 
+ln -s ../distrib distrib
+
+
 docker build \
 	 --build-arg HTTP_PROXY=$http_proxy \
          --build-arg DRUID_VERSION=$DRUID_VERSION \
@@ -15,6 +18,7 @@ docker build \
          --build-arg SPARK_HADOOP_VERSION=$SPARK_HADOOP_VERSION \
 	-t ryndin_services_base:3 . 
 
+rm distrib
 
 #    dtBuildContext 
 #	 --build-arg USER_ID="$(id -u)" \
