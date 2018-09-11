@@ -27,10 +27,10 @@ ENV DRUID_HOME=$OSA_HOME/druid \
     KERB_ADMIN_USER=admin \
     KERB_ADMIN_PASS=admin
 
-ADD druid-$DRUID_VERSION-bin.tar.gz ${OSA_HOME} 
-ADD kafka_$KAFKA_SCALA_VERSION-$KAFKA_VERSION.tgz ${OSA_HOME} 
-ADD hadoop-$HADOOP_VERSION.tar.gz ${OSA_HOME} 
-ADD spark-$SPARK_VERSION-bin-hadoop$SPARK_HADOOP_VERSION.tgz ${OSA_HOME}
+ADD http://oraclegis.com/soft/druid-$DRUID_VERSION-bin.tar.gz ${OSA_HOME} 
+ADD http://oraclegis.com/soft/kafka_$KAFKA_SCALA_VERSION-$KAFKA_VERSION.tgz ${OSA_HOME} 
+ADD http://oraclegis.com/soft/hadoop-$HADOOP_VERSION.tar.gz ${OSA_HOME} 
+ADD http://oraclegis.com/soft/spark-$SPARK_VERSION-bin-hadoop$SPARK_HADOOP_VERSION.tgz ${OSA_HOME}
 
 RUN ln -s $OSA_HOME/druid-$DRUID_VERSION  $DRUID_HOME \
     && ln -s $OSA_HOME/kafka_$KAFKA_SCALA_VERSION-$KAFKA_VERSION  $KAFKA_HOME \

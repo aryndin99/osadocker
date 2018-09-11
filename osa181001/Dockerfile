@@ -58,7 +58,7 @@ RUN rm $INSTALL_DIR/$SQLCL_ZIP
 
 ADD create_user.sql $INSTALL_DIR
 
-ADD spark-$SPARK_VERSION-bin-hadoop$SPARK_HADOOP_VERSION.tgz ${OSA_HOME}
+ADD http://oraclegis.com/soft/spark-$SPARK_VERSION-bin-hadoop$SPARK_HADOOP_VERSION.tgz ${OSA_HOME}
 RUN ln -s $OSA_HOME/spark-$SPARK_VERSION-bin-hadoop$SPARK_HADOOP_VERSION $SPARK_HOME
 
 EXPOSE 9080 9443

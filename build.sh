@@ -1,3 +1,4 @@
+docker pull container-registry.oracle.com/java/serverjre:8
 docker pull container-registry.oracle.com/database/enterprise:12.2.0.1
 
 cd ryndin_linux
