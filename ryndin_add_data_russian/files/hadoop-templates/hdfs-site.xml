@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License. See accompanying LICENSE file.
+-->
+<configuration>
+
+    <property>
+        <name>dfs.datanode.data.dir</name>
+        <value>file://{HDFS_STORAGE}/datanode</value>
+        <description>Comma separated list of paths on the local filesystem of a DataNode where it should store its blocks.</description>
+    </property>
+    <property>
+        <name>dfs.namenode.name.dir</name>
+        <value>file://{HDFS_STORAGE}/namenode</value>
+        <description>Path on the local filesystem where the NameNode stores the namespace and transaction logs persistently.</description>
+    </property>
+    <property>
+        <name>dfs.namenode.rpc-bind-host</name>
+        <value>0.0.0.0</value>
+        <description>The actual address the server will bind to. Name node listen to all interfaces by setting to 0.0.0.0.</description>
+    </property>
+    <property>
+        <name>dfs.datanode.hostname</name>
+        <value>{PUBLIC_ADDRESS}</value>
+        <description>Announced name of the data node.</description>
+    </property>
+    <property>
+        <name>dfs.namenode.servicerpc-bind-host</name>
+        <value>0.0.0.0</value>
+        <description>The actual address the server will bind to. Name node listen to all interfaces by setting to 0.0.0.0.</description>
+    </property>
+    <property>
+        <name>dfs.replication</name>
+        <value>1</value>
+    </property>
+    <property>
+        <name>dfs.webhdfs.enabled</name>
+        <value>true</value>
+        <description>Enable WebHDFS (REST API) in Namenodes and Datanodes.</description>
+    </property>
+    <property>
+        <name>dfs.namenode.datanode.registration.ip-hostname-check</name>
+        <value>false</value>
+        <description>
+            Prevent "Datanode denied communication with namenode because hostname cannot be resolved" exception on data nodes
+            when using pure IP based configuration, and reverse lookup not available in that environment.
+        </description>
+    </property>
+
+<!-- kerberos start -->
+{KERBEROS_BEGIN}
+<property>
+  <name>dfs.block.access.token.enable</name>
+  <value>true</value>
+</property>
+
+<property>
+  <name>dfs.namenode.keytab.file</name>
+  <value>{HDFSSERVICE_KEYTAB_FILE}</value>
+</property>
+
+<property>
+  <name>dfs.namenode.kerberos.principal</name>
+  <value>{HDFSSERVICE_PRINCIPAL}</value>
+</property>
+
+<property>
+  <name>dfs.namenode.kerberos.http.principal</name>
+  <value>{HDFSSERVICE_PRINCIPAL}</value>
+</property>
+
+<property>
+  <name>dfs.namenode.kerberos.internal.spnego.principal</name>
+  <value>{HDFSSERVICE_PRINCIPAL}</value>
+</property>
+
+<property>
+  <name>dfs.secondary.namenode.keytab.file</name>
+  <value>{HDFSSERVICE_KEYTAB_FILE}</value>
+</property>
+
+<property>
+  <name>dfs.secondary.namenode.kerberos.principal</name>
+  <value>{HDFSSERVICE_PRINCIPAL}</value>
+</property>
+
+<property>
+  <name>dfs.secondary.namenode.kerberos.http.principal</name>
+  <value>{HDFSSERVICE_PRINCIPAL}</value>
+</property>
+
+<property>
+  <name>dfs.secondary.namenode.kerberos.internal.spnego.principal</name>
+  <value>{HDFSSERVICE_PRINCIPAL}</value>
+</property>
+
+<property>
+  <name>dfs.datanode.data.dir.perm</name>
+  <value>700</value>
+</property>
+
+<property>
+  <name>dfs.datanode.address</name>
+  <value>0.0.0.0:10019</value>
+</property>
+
+<property>
+  <name>dfs.datanode.http.address</name>
+  <value>0.0.0.0:10022</value>
+</property>
+
+<property>
+  <name>dfs.data.transfer.protection</name>
+  <value>integrity</value>
+</property>
+
+<property>
+  <name>dfs.http.policy</name>
+  <value>HTTPS_ONLY</value>
+</property>
+
+<property>
+  <name>dfs.datanode.kerberos.principal</name>
+  <value>{HDFSSERVICE_PRINCIPAL}</value>
+</property>
+
+<property>
+  <name>dfs.datanode.kerberos.http.principal</name>
+  <value>{HDFSSERVICE_PRINCIPAL}</value>
+</property>
+
+<property>
+  <name>dfs.datanode.keytab.file</name>
+  <value>{HDFSSERVICE_KEYTAB_FILE}</value>
+</property>
+
+<property>
+  <name>dfs.webhdfs.enabled</name>
+  <value>true</value>
+</property>
+ 
+<property>
+  <name>dfs.web.authentication.kerberos.principal</name>
+  <value>{HDFSSERVICE_PRINCIPAL}</value>
+</property>
+ 
+<property>
+  <name>dfs.web.authentication.kerberos.keytab</name>
+  <value>{HDFSSERVICE_KEYTAB_FILE}</value>
+</property>
+{KERBEROS_END}
+<!-- kerberos end -->
+
+    <!-- adding HA - for now just as a single node -->
+    <property>
+        <name>dfs.nameservices</name>
+        <value>osa-cluster</value>
+    </property>
+    <property>
+        <name>dfs.client.failover.proxy.provider.osa-cluster</name>
+        <value>org.apache.hadoop.hdfs.server.namenode.ha.ConfiguredFailoverProxyProvider</value>
+    </property>
+    <property>
+        <name>dfs.ha.namenodes.osa-cluster</name>
+        <value>nn1</value>
+    </property>
+    <property>
+        <name>dfs.namenode.rpc-address.osa-cluster.nn1</name>
+        <value>{HDFS_NAME_NODE}:8020</value>
+        <description>Namenode for HDFS HA</description>
+    </property>
+    <property>
+        <name>dfs.namenode.http-address.osa-cluster.nn1</name>
+        <value>{HDFS_NAME_NODE}:50070</value>
+        <description>Namenode for Web HDFS HA</description>
+    </property>
+
+</configuration>

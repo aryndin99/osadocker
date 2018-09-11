@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+{KERBEROS_BEGIN}
+	<property>
+		<name>ssl.server.truststore.location</name>
+		<value>{HADOOP_CONF_DIR}/cxfca.jks</value>
+	</property>
+	<property>
+		<name>ssl.server.truststore.password</name>
+		<value>password</value>
+	</property>
+	<property>
+		<name>ssl.server.keystore.location</name>
+		<value>{HADOOP_CONF_DIR}/bob.jks</value>
+	</property>
+	<property>
+		<name>ssl.server.keystore.password</name>
+		<value>password</value>
+	</property>
+	<property>
+		<name>ssl.server.keystore.keypassword</name>
+		<value>password</value>
+	</property>
+{KERBEROS_END}
+</configuration>

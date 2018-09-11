@@ -1,0 +1,101 @@
+CUSTID,NAME,Street,City,Zip,State,STORESALES,WEBSALES,AVGDISCOUNT,BOUGHT
+1,Walder Sanders,4377 Azalea Rd,Waukena,93282,CA,3941,2742,44,1
+2,David Deckard,3209 Lincoln Sq,Jump River,54434,WI,641,802,20,0
+3,Phil Guillaume,486 Baleen Sq,Estell Manor,08319,NJ,4923,2474,3,1
+4,Alex Deckard,1595 Washington Blvd,Sedan,67361,KS,1088,395,31,0
+5,Elisa Stone,3679 Darvin Blvd,Tarboro,27886,NC,751,217,23,0
+6,Jill Tully,1919 Ash Pl,Cataract,54620,WI,2600,2785,5,1
+7,John Smith,211 Oak Pl,Delafield,53018,WI,2335,20,2,0
+8,Thomas Hanka,4546 Blueberry Sq,Mulliken,48861,MI,1559,2307,24,1
+9,Alex Deckard,3707 Hamilton Rd,Dakota City,68731,NE,2599,1216,31,1
+10,Elisa Snow,2919 Azalea Rd,Goodyear,85338,AZ,4610,2689,16,1
+11,Chris Snow,1213 County Str,Mc Clellandtown,15458,PA,2357,387,6,0
+12,Walder Bara,2685 Leigh Pkwy,Rockport,78382,TX,4509,2973,17,1
+13,Peter Pyke,20 Julian Str,Lake Odessa,48849,MI,364,124,23,0
+14,David Allan,4465 Hamilton Blvd,Brawley,92227,CA,1449,393,17,0
+15,Chris Danza,4983 Maryann Blvd,Means,40346,KY,2675,136,23,0
+16,Paul Martell,1765 Darvin Rd,Moreland,30259,GA,1486,884,26,1
+17,Alia Bara,3955 Jefferson Blvd,Dwight,60420,IL,1307,2334,27,1
+18,Don Smith,1935 Clinton Pl,Stewardson,62463,IL,2491,2714,1,1
+19,Paul Jones,1482 Blueberry Dr,Jamestown,42629,KY,321,368,19,1
+20,Paul Wong,767 Blueberry Pkwy,Kansas City,64192,MO,3917,2721,14,1
+21,Jessica Storm,3520 Blueberry Str,Woodsville,03785,NH,560,323,13,0
+22,Walder Sand,2360 Market Pkwy,Fort Lauderdale,33306,FL,4086,2220,46,1
+23,Julien Snow,2564 Market Rd,Simla,80835,CO,946,525,1,0
+24,Jill Stone,3204 Lincoln Str,Cameron,14819,NY,4450,2566,34,1
+25,Jill Danza,1099 Lincoln Rd,Christiansburg,24068,VA,1177,2751,12,1
+26,Brett Guillaume,3741 Oak Sq,Scottsville,14546,NY,1456,1807,2,1
+27,Don Wong,1672 Darvin Rd,Knightdale,27545,NC,380,203,10,0
+28,Christophe Storm,4283 Clinton Rd,West Bloomfield,48322,MI,1108,300,9,0
+29,Alia Ramos,4119 Baleen Ave,Sun City,33586,FL,370,230,31,0
+30,Elisa Hanka,1731 Azalea Blvd,Lake George,80827,CO,2804,2262,32,1
+31,Inga Storm,4257 Julian Sq,Framingham,01705,MA,4167,2186,29,1
+32,David Garcia,694 Main Rd,Easton,98925,WA,4061,2806,32,1
+33,Chris Ramos,4145 Baleen Sq,Craigsville,24430,VA,2222,807,15,0
+34,John Pyke,1517 Clinton Sq,Walnut Creek,94595,CA,1538,1417,44,1
+35,Catelyn Smith,4319 Julian Dr,Scottsdale,85267,AZ,1050,335,50,0
+36,Catelyn Zeus,2791 Cherry Str,Waco,76798,TX,446,451,13,0
+37,Jim Zeus,1430 Clinton Dr,Kapowsin,98344,WA,3579,1070,7,1
+38,Elisa Storm,3372 Baleen Blvd,Bayamon,00960,PR,358,573,21,0
+39,Walder Frey,1180 Main Way,Spencerville,74760,OK,812,52,9,0
+40,Paul Garcia,1071 Oak Rd,North Lima,44452,OH,2617,1749,23,1
+41,Chris Allan,4657 Ash Str,Palm Bay,32908,FL,2084,117,6,0
+42,Thomas Smith,3246 Maryann Sq,Yorklyn,19736,DE,4973,2918,20,1
+43,Jim Frizl,872 Market Rd,Rochester,48306,MI,1226,433,10,0
+44,Julien Storm,802 Baleen Ave,Canton,44718,OH,4039,2213,38,1
+45,Arya Snow,4731 Clinton Pkwy,D Lo,39062,MS,1961,39,41,0
+46,Walder Chen,264 Leigh Str,Fresno,93737,CA,675,16,7,0
+47,Julien Stark,2543 Lincoln Ave,Hobucken,28537,NC,1491,324,19,0
+48,Inga Solo,1970 Bluegrass Sq,Phoenix,85053,AZ,1040,206,12,0
+49,Catelyn Hill,2053 Jefferson Pkwy,Wharton,43359,OH,2308,206,25,0
+50,Brett Stark,3201 Darvin Blvd,Crofton,42217,KY,459,375,12,0
+51,Robert Frey,2908 Ross Ave,Danforth,04424,ME,445,479,18,0
+52,Petra Rivers,622 Pensylvania Rd,Cumberland,43732,OH,179,636,9,0
+53,Christophe Frey,2264 Leigh Ave,Salt Lake City,84180,UT,81,344,17,0
+54,Jill Martell,4979 Oak Str,Wilsonville,35186,AL,2893,849,10,0
+55,Jim Zeus,3671 Bluegrass Blvd,Edcouch,78538,TX,2447,418,26,0
+56,Linda Stone,4214 Ash Ave,New Hampton,10958,NY,612,225,20,0
+57,Jessica Snow,2749 County Str,Dakota,55925,MN,1448,2572,16,1
+58,John Snow,2064 Bluegrass Str,Mountain View,82939,WY,1838,2574,45,1
+59,Artemis Jones,2689 Leigh Pkwy,Jacksonville,36265,AL,919,408,30,0
+60,Alia Lopez,726 Keyes Dr,Mc Lain,39456,MS,1626,364,12,0
+61,Arya Solo,3752 Ash Sq,Delta Junction,99737,AK,4433,2281,1,1
+62,Jill Bara,2503 Washington Str,Blythewood,29016,SC,839,235,18,0
+63,Ellie Stone,4175 Leigh Str,Tampa,33622,FL,1850,25,11,0
+64,Sansa Danza,4547 Market Dr,Clyde,43410,OH,994,173,14,0
+65,Don Ramos,2943 Blueberry Rd,Trenton,28585,NC,1656,390,17,0
+66,Walder Wong,2409 Baleen Str,Morganville,67468,KS,3470,2987,44,1
+67,Paul Stone,796 Lincoln Blvd,Greenville,29612,SC,1452,345,2,0
+68,Don Solo,3070 Hamilton Pl,Norene,37136,TN,1987,208,12,0
+69,Arya Dean,3712 Market Dr,Austin,78730,TX,1420,89,35,0
+70,Alia Merlke,3083 Blueberry Pl,Mount Summit,47361,IN,202,38,40,0
+71,Arya Zeus,2817 Leigh Sq,Angeles,00611,PR,4400,1311,5,1
+72,Inga Lopez,3348 Ash Ave,Santa Rosa,95401,CA,2001,1103,15,1
+73,Julien Sanders,2143 County Ave,Wilberforce,45384,OH,55,796,14,0
+74,Thomas Bara,4265 Pensylvania Sq,Lubbock,79493,TX,1020,2514,37,1
+75,Brett Tully,4479 Darvin Sq,Oklahoma City,73142,OK,4651,1400,5,1
+76,Sansa Lopez,4959 Maryann Rd,Rolling Prairie,46371,IN,2248,38,14,0
+77,Jessica Martinez,3814 Ross Way,Joliet,60435,IL,3398,2784,31,1
+78,Fatima Pyke,2925 Oregon Pl,Whitewater,59544,MT,4174,521,23,1
+79,Linda Pyke,2381 Keyes Ave,Burkes Garden,24608,VA,1052,246,1,0
+80,Don Pyke,2068 Darvin Sq,Revloc,15948,PA,447,408,8,0
+81,Jorge Hill,2223 Cherry Rd,Cornettsville,41731,KY,1390,2801,8,1
+82,Sansa Snow,1584 Darvin Pl,Saint Ann,63074,MO,2300,41,24,0
+83,Alex Ramos,3505 Washington Pkwy,Ghent,41045,KY,3707,2517,37,1
+84,Christophe Hanka,4238 Hamilton Ave,Altamont,84001,UT,2247,2462,17,1
+85,Alex Torino,4381 Bluegrass Dr,Saint Louis,63110,MO,4731,1967,20,1
+86,Thomas Allan,1387 Ash Str,Delmont,15626,PA,4916,2903,44,1
+87,Alex Hill,1470 Julian Pl,Washington,20015,DC,3731,1780,30,1
+88,Brett Guillaume,523 Leigh Ave,Calexico,92231,CA,1635,201,45,0
+89,Catelyn Garcia,3024 Main Rd,Alden,14004,NY,3481,1224,43,1
+90,Jill Tully,1903 Ross Ave,San Antonio,78238,TX,225,124,21,0
+91,Linda Sand,3693 Washington Dr,Marlborough,03455,NH,340,211,25,0
+92,Jim Smith,2531 Leigh Sq,Ridgefield,06877,CT,1000,1,28,0
+93,Robert Lopez,1368 Ash Rd,Pelican Lake,54463,WI,4514,552,25,1
+94,Walder Hanka,713 Baleen Dr,Bennington,68007,NE,4624,2788,48,1
+95,Arya Tully,1228 Blueberry Pl,Commerce Township,48382,MI,1309,827,19,0
+96,Brett Pyke,583 Keyes Ave,Barrington,02806,RI,437,439,21,0
+97,Arya Ramos,4075 Keyes Sq,Friesland,53935,WI,3194,2870,10,1
+98,Artemis Rivers,1254 Bluegrass Str,Memphis,38194,TN,2261,1751,24,1
+99,Brett Sanders,1525 Washington Pl,Lexington,29072,SC,2005,105,5,0
+100,Linda Snow,3872 Baleen Dr,Leland,28451,NC,3727,1187,21,1
