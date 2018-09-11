@@ -5,7 +5,7 @@ MAINTAINER Alexander Ryndin alexander.ryndin@oracle.com
 ARG USER_ID=400
 ARG USER_GRP_ID=500
 
-ARG DRUID_VERSION
+# ARG DRUID_VERSION
 ARG HADOOP_VERSION
 ARG SPARK_VERSION
 ARG SPARK_HADOOP_VERSION
@@ -19,26 +19,26 @@ RUN groupadd -r osa -g 433 && \
 ENV INSTALL_DIR /u02
 ENV OSA_HOME=$INSTALL_DIR/osa
 
-ENV DRUID_HOME=$OSA_HOME/druid \
-    KAFKA_HOME=$OSA_HOME/kafka \
+# ENV DRUID_HOME=$OSA_HOME/druid \
+ENV KAFKA_HOME=$OSA_HOME/kafka \
     SPARK_HOME=$OSA_HOME/spark \
     HADOOP_HOME=$OSA_HOME/hadoop \
     REALM=OSA.ORACLE.COM \
     KERB_ADMIN_USER=admin \
     KERB_ADMIN_PASS=admin
 
-ADD http://oraclegis.com/soft/druid-$DRUID_VERSION-bin.tar.gz ${OSA_HOME} 
+# ADD http://oraclegis.com/soft/druid-$DRUID_VERSION-bin.tar.gz ${OSA_HOME} 
 ADD http://oraclegis.com/soft/kafka_$KAFKA_SCALA_VERSION-$KAFKA_VERSION.tgz ${OSA_HOME} 
 ADD http://oraclegis.com/soft/hadoop-$HADOOP_VERSION.tar.gz ${OSA_HOME} 
 ADD http://oraclegis.com/soft/spark-$SPARK_VERSION-bin-hadoop$SPARK_HADOOP_VERSION.tgz ${OSA_HOME}
 
-RUN ln -s $OSA_HOME/druid-$DRUID_VERSION  $DRUID_HOME \
-    && ln -s $OSA_HOME/kafka_$KAFKA_SCALA_VERSION-$KAFKA_VERSION  $KAFKA_HOME \
+# RUN ln -s $OSA_HOME/druid-$DRUID_VERSION  $DRUID_HOME 
+RUN ln -s $OSA_HOME/kafka_$KAFKA_SCALA_VERSION-$KAFKA_VERSION  $KAFKA_HOME \
     && ln -s $OSA_HOME/hadoop-$HADOOP_VERSION $HADOOP_HOME \
     && ln -s $OSA_HOME/spark-$SPARK_VERSION-bin-hadoop$SPARK_HADOOP_VERSION $SPARK_HOME
 
 # Druid initial setup
-RUN cd $DRUID_HOME && bin/init
+# RUN cd $DRUID_HOME && bin/init
 
 # Expose ports:
 # - 4040: HTTP (spark)

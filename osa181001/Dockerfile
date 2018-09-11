@@ -52,7 +52,7 @@ ADD jetty-osa-datasource.xml $OSA_HOME/osa-base/etc
 ADD runOSA.sh /
 RUN chmod 755 /runOSA.sh
 
-ADD $SQLCL_ZIP $INSTALL_DIR
+ADD http://oraclegis.com/soft/$SQLCL_ZIP $INSTALL_DIR
 RUN unzip $INSTALL_DIR/$SQLCL_ZIP -d $INSTALL_DIR
 RUN rm $INSTALL_DIR/$SQLCL_ZIP
 
